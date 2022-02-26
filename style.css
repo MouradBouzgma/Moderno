@@ -1,0 +1,214 @@
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  margin : auto ; 
+}
+@media (min-width: 768px) {
+  .container{
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container{
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container{
+    width: 1000px;
+  }
+}
+/* start header  */
+header {
+  background-color: rgba(51, 51, 51, 1);
+  height: 64px;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo img {
+  height: 40px;
+  padding: 10px;
+}
+/* end header  */
+/* start landing  */
+.landing {
+  background-color:rgba(51, 51, 51, 1) ;
+}
+.landing .container {
+  text-align: center;
+  color: white;
+  padding: 100px 0px;
+}
+.landing .container h1 {
+  font-size: 75px;
+  margin: 0;
+  padding: 30px;
+}
+.landing .container p {
+  font-size: 20px;
+  padding-bottom: 30px;
+  width: 522px;
+  margin: auto;
+}
+.aclass{
+  display: block;
+  color: #FFFFFF;
+  background-color: rgba(250, 105, 78, 1);
+  width: 123px;
+  padding: 15px;
+  margin: auto;
+  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
+}
+/* end landing  */
+/* start serices  */
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.services .container div  , .contact .container div{
+  margin: 50px auto;
+  text-align: center;
+}
+.services .container div:first-of-type div{
+  background-color: rgba(250, 105, 78, 1);
+  width: 80px;
+  height: 80px;
+  border-radius:50% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.services .container div:nth-of-type(2) div, .services .container div:last-of-type div {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius:50% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eee;
+}
+
+.services .container div p {
+  width: 300px;
+  color: #808080;
+  font-size: 15px;
+}
+/* end serices  */
+/* start stories  */
+.stories p , .contact p{
+  color: #808080;
+  font-size: 15px;
+}
+.stories  {
+  text-align: center;
+}
+.stories .introduction {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  border: 2px solid rgb(238, 238, 238);
+}
+.stories .introduction img{
+  width: 100%;
+}
+.stories .introduction div:last-child{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.stories .introduction div:last-child img{
+  position: absolute;
+  width: 10px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.stories .pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 10px;
+  margin: 100px 0px;
+}
+.stories .pictures img {
+  width: 100%;
+}
+.banner {
+  margin: 50px 0px;
+}
+/* end stories  */
+/* start contact  */
+.contact .intro img {
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 50px 0px;
+}
+.form .adress {
+  width: 30%;
+}
+.form form {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template: repeat(5 ,20%) / repeat(2 , 50%);
+  gap: 20px;
+  height: 200px;
+}
+.form input, .form textarea {
+  background-color: rgba(241, 244, 247, 1);
+  padding: 10px;
+  border: none;
+}
+.form form input:first-of-type{
+  grid-area: 1 / 1 / span 1/span 1 ;
+}
+.form form input:nth-of-type(2){
+  grid-area: 1 /2 / span 1 / span 1;
+}
+.form form input:nth-of-type(3){
+  grid-area: 2 /1 / span 1 / span 2;
+}
+.form form textarea{
+  grid-area: 3 / 1 / span 2 / span 2;
+  resize: none;
+}
+.form form input:nth-of-type(4){
+  grid-area: 5 /1 / span 1 / span 2;
+  background-color: rgba(250, 105, 78, 1);
+  color: white;
+  border: none;
+  outline:none;
+  cursor: pointer;
+
+}
+form input:focus , form textarea:focus {
+  color: black;
+  border: none;
+  outline: none;
+}
+/* end contact  */
+/* start footer  */
+footer {
+  background-color: rgba(51, 51, 51, 1);
+  text-align: center;
+  
+}
+footer p {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* end footer  */
